@@ -16,7 +16,7 @@ $kubectl create namespace mynamespace
 Output: namespace/mynamespace created
 ```
 
-## 2. Show All Namespaceskubectl get deployment -n mynamespace
+## 2. Show All Namespaces
 ```sh
 $kubectl get namespaces
 ```
@@ -82,7 +82,7 @@ NAME                     READY   STATUS    RESTARTS   AGE     IP              NO
 nginx-65f88748fd-bp7pw   1/1     Running   0          4m27s   10.30.143.253   ip-10-30-136-116.ec2.internal   <none>           <none>
 ```
 
-## Expost a Deployment into a YAML
+## 3. Export a Deployment into a YAML
 ```sh
 $kubectl get deployments 0n mynamespace
 $kubectl get delopment nginx -n mynamespace -o yaml
